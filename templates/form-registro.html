@@ -1,0 +1,45 @@
+<div class="container-fluid">
+
+  <div class="encabezado form-head text-center col-12">
+    <h2>Ingreso de datos</h2>
+    <h4 class="leyend">Leyenda con explicación de anonimato</h4>
+  </div>
+
+  <div class="form-cont form-r col-10 col-sm-10 col-md-6 offset-md-3 offset-1">
+    <form class="col-12 form-app">
+      <div class="form-group row">
+        <div class="col-12 f-group">
+          <img src="img/nombre.svg"/>
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellido">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-12 f-group">
+          <img src="img/email.svg"/>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-12 f-group">
+          <img src="img/fecha-nacimiento.svg"/>
+          <input data-field="date" class="form-control" id="fechaNac" data-date-format="mm/dd/yyyy" placeholder="Fecha de nacimiento">
+        </div>
+      </div>
+    </form>
+
+    <div class="recibir-resultados col-12 text-center">
+      <p>¿Le interesaría recibir los resultados una vez finalizado el evento?</p>
+      <div>
+      <span>No </span><label class="switch">
+        <input type="checkbox" id="subscript">
+        <span class="slider round"></span>
+      </label><span> Si</span>
+    </div>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <div class="col-12 col-sm-6 offset-0 offset-sm-3 btn-ok e-submit">INGRESAR</div>
+  </div>
+</div>
+<div id="dtBox"></div>
