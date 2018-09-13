@@ -206,7 +206,7 @@ class CuestionarioConfirm extends Pregunta{
       $.post(URL_ANSWER,JSON.stringify(e))
         .done(function(d){
           $(LOADING_CONTANIER).hide();
-          let data = JSON.parse(d);
+          let data = d;
 
           preg.cuestionario.siguientePregunta();
         })

@@ -54,7 +54,7 @@ class Cuestionario extends Screen{
     $.post(this.urlPreguntas,JSON.stringify({"customer":this.site.customer}))
       .done(function(d){
         $(LOADING_CONTANIER).hide();
-        let data = JSON.parse(d);
+        let data = d;
 
         screen.title = data["charla"]["nombre"];
         $('#c-title').html(screen.title);

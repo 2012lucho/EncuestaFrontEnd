@@ -1,0 +1,13 @@
+{
+	"charla":{
+		"nombre":"Encuesta número 1",
+		"adicional1":"Subtitulo de encuesta",
+		"adicional2":"Descripcion encuesta",
+		"preguntas":[
+			{"tipo":"0", "pregunta":"Pregunta 1"},
+			{"tipo":"1", "pregunta":"Pregunta 2"},
+			{"tipo":"2", "pregunta":"Pregunta 3", "opciones":["Opción 1", "Opción 2", "Opción 3", "Opción 4"]},
+			{"tipo":"3", "pregunta":"Pregunta 4", "opciones":["Opción 1", "Opción 2", "Opción 3", "Opción 4"]}
+		]
+	}
+}

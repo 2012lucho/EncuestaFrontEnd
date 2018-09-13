@@ -57,8 +57,7 @@ clearButtonContent: "CANCELAR",
     $(LOADING_CONTANIER).show();
     $.post(this.submitUrl,JSON.stringify(data))
     .done(function(d){
-      let Data = JSON.parse(d);
-      form.site.setCustomer(Data["customer"]);
+      form.site.setCustomer(d["customer"]);
       $(LOADING_CONTANIER).hide();
       form.site.goTo(form.onSubmit);
     })

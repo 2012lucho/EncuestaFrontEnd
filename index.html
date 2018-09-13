@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Godoy Cruz - Los 200 años de la reforma</title>
+  <title>Portfolio - App Encuesta 1</title>
 </head>
 
 <body>
@@ -13,15 +13,42 @@
 </div>
 
 <div class="loader-container">
-<div class="loader-box">
-<div class="loader-rounded-box">
-  <div class="book">
-  <div class="book__page"></div>
-  <div class="book__page"></div>
-  <div class="book__page"></div>
-</div>
-</div>
-</div>
+  <style>
+      
+      .lds-dual-ring {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+      }
+      .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 46px;
+        height: 46px;
+        margin: 1px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+    <div style="width: 100%;height: 100%;justify-content: center;align-items: center;display: flex;">
+      <div class="flex">
+        <img alt="" src="assets/logo.svg" width="auto" height="50px">
+        <div style="width: 100%;/*! padding: auto; */justify-content: center;align-items: center;display: flex;margin-top: 15px;">
+          <div class="lds-dual-ring " style="/*! display: flex; */"></div>
+        </div>
+      </div>
+    </div>
 </div>
 
 <div class="modal fade" id="errorModal">
